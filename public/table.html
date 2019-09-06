@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nifty Novels</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home Page</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profilepage.html">My Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="table.html">Nifty Novels</a>
+    </li>
+  </ul>
+<p class="aligncenter"><img src="img/Reading.jpg" width=400></img></p>
+<h3 align="center">Here are some novels that I quite enjoy:</h3>
+<div class="container center_div">
+<table id="booksTable" class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Page Count</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">A Game of Thrones</th>
+      <td>George RR. Martin</td>
+      <td>1996</td>
+      <td>Bantam Spectra</td>
+      <td>453</td>
+      <td>$24.99</td>
+    </tr>
+    <tr>
+      <th scope="row">A Clash of Kings</th>
+      <td>George RR. Martin</td>
+      <td>1998</td>
+      <td>Bantam Spectra</td>
+      <td>507</td>
+      <td>$26.99</td>
+    </tr>
+    <tr>
+      <th scope="row">A Storm of Swords</th>
+      <td scope="">George RR. Martin</td>
+      <td>2000</td>
+      <td>Bantam Spectra</td>
+      <td>542</td>
+      <td>$26.99</td>
+    </tr>
+    <tr>
+      <th scope="row">A Feast of Crows</th>
+      <td>George RR. Martin</td>
+      <td>2005</td>
+      <td>Bantam Spectra</td>
+      <td>572</td>
+      <td>$27.99</td>
+    </tr>
+    <tr>
+      <th scope="row">A Dance With Dragons</th>
+      <td>George RR. Martin</td>
+      <td>2011</td>
+      <td>Bantam Spectra</td>
+      <td>511</td>
+      <td>$27.99</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<hr>
+<h2>Fill out the following form to add a row:</h2>
+<br>
+<div class="container center_div">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type = "string" class="form-control" id="exampleFormControlInput1" placeholder="Book Title">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput2">Author</label>
+    <input type = "string" class="form-control" id="exampleFormControlInput2" placeholder="Author Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Year Published</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1980</option>
+      <option>1981</option>
+      <option>1982</option>
+      <option>1983</option>
+      <option>1984</option>
+      <option>1985</option>
+      <option>1986</option>
+      <option>1987</option>
+      <option>1988</option>
+      <option>1989</option>
+      <option>1990</option>
+      <option>1991</option>
+      <option>1992</option>
+      <option>1993</option>
+      <option>1994</option>
+      <option>1995</option>
+      <option>1996</option>
+      <option>1997</option>
+      <option>1998</option>
+      <option>1999</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option>
+      <option>2004</option>
+      <option>2005</option>
+      <option>2006</option>
+      <option>2007</option>
+      <option>2008</option>
+      <option>2009</option>
+      <option>2010</option>
+      <option>2011</option>
+      <option>2012</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2015</option>
+      <option>2016</option>
+      <option>2017</option>
+      <option>2018</option>
+      <option>2019</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput3">Publisher</label>
+    <input type = "string" class="form-control" id="exampleFormControlInput3" placeholder="Publisher Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput4">Page Count</label>
+    <input type = "integer" class="form-control" id="exampleFormControlInput4" placeholder="100">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput5">MSRP</label>
+    <input type = "currency" class="form-control" id="exampleFormControlInput5" placeholder="$9.99">
+  </div>
+</form>
+</div>"
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('booksTable'));
+</script>
+</body>
+</html>

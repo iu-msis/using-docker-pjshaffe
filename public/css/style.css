@@ -1,0 +1,44 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.aligncenter{
+  text-align: center;
+}
+#first {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+body {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+a{
+  color: red;
+}
+h1 {
+  color: white;
+}
+h2 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* This was found on w3schools.com */
+.thumb {
+  border: 1px
+  border-radius: 4px;
+  padding: 5px;
+  height: 120px;
+}
+
+.caption {
+  font-size: 12px;
+  font-style: italic;
+}
