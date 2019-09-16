@@ -18,6 +18,7 @@
       <a class="nav-link" href="table.html">Nifty Novels</a>
     </li>
   </ul>
+  <!--
 <h1 align = "center">A Little About Me</h1>
 <img src="img/Dragon.jpg" class="center"></img>
 <hr>
@@ -75,5 +76,26 @@
   </div>
 </div>
 </div>
+-->
+<div class = "container">
+  <div id="randomUser" class="col-md-3 queueView">
+    <div class="user userGenerator">
+      <span><a :href="user.picture.large">
+      <img :src="user.picture.large" alt="Profile Picture"></a>
+    </span>
+      <br>
+      <b>First Name:</b>{{user.name.first+' '+user.name.last}}
+      <br>
+      <b>Country of Origin:</b>{{user.nat}}
+      <br>
+      <b>Age:</b>{{user.dob.age}}
+      <br>
+      <b>Email:</b><a :href="'mailto:'+'user.email'">{{user.email}}</a>
+      <br>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/randomuser.js"></script>
 </body>
 </html>
