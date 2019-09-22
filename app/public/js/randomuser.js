@@ -1,7 +1,9 @@
+
 var userApp = new Vue({
   el: '#randomUser',
   data: {
-    user: {
+    user: [],
+    newUser:{
       name:"",
       nat:"",
       dob: "",
@@ -16,9 +18,13 @@ var userApp = new Vue({
       .then(response => response.json())
       .then(json => {userApp.user = json.results[0]});
     }
+
+
   },
   created() {
     this.fetchProfile()
   }
+
+
 
 });

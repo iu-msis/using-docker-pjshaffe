@@ -84,7 +84,7 @@
       <img :src="user.picture.large" alt="Profile Picture"></a>
     </span>
       <br>
-      <b>First Name:</b>{{user.name.first+' '+user.name.last}}
+      <b>Name:</b>{{user.name.first+' '+user.name.last}}
       <br>
       <b>Country of Origin:</b>{{user.nat}}
       <br>
@@ -92,10 +92,16 @@
       <br>
       <b>Email:</b><a :href="'mailto:'+'user.email'">{{user.email}}</a>
       <br>
+      <div>
+      <form id="userForm" @submit.prevent="fetchProfile">
+      <button type="submit">Next User!</button>
+    </form>
+    </div>
     </div>
   </div>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/randomuser.js"></script>
+
 </body>
 </html>
