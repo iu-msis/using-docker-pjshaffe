@@ -2,8 +2,7 @@
 var userApp = new Vue({
   el: '#randomUser',
   data: {
-    user: [],
-    newUser:{
+    user: {
       name:"",
       nat:"",
       dob: "",
